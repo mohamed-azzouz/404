@@ -1,0 +1,97 @@
+body{
+	background-image: url("https://media.giphy.com/media/Rkis28kMJd1aE/giphy.gif");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	
+	
+}
+
+header{
+	text-align: center;
+	font-size: 100% ;
+	position: sticky;
+	color: black ;
+}
+
+.error{
+	border-style: outset;
+	border-width: 7px;
+	border-color: turquoise;
+	width: 60% ;
+	margin-left: 250px ;
+
+
+
+}
+
+h1{
+	font-style: italic;
+	font-family: fantasy;
+	font-size: 300%;
+	color: black;
+	animation-duration: 3s;
+    animation-name: slidein;
+
+}
+
+p{
+	font-style: bold;
+	font-family: cursive;
+	font-size: 200%;
+	color: white ;
+	animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
